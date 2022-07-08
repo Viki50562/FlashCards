@@ -7,9 +7,11 @@ class View {
   constructor() {  }
 
   //Тут вывожу просто конкретный вопрос
+
   showQuestion(question) {
     const answer = readLine.question(question);
     return answer;
+
   }
 
   //Тут вывожу эмодзи в зависимости от результата проверки ответа из модели
@@ -32,8 +34,6 @@ class View {
     const answer = readLine.question('Выберите категорию: ');
     return answer;
   }
-
-
 
 }
 
