@@ -21,7 +21,11 @@ class Controller {
     this.model.getQuestionListByCategory(selectedCategory);
     
     const arrQuestions = this.model.getQuestionListByCategory(selectedCategory);
-    this.view.showQuestion(arrQuestions);
+    arrQuestions.forEach((el, index) => {
+    const answer = this.view.showQuestion(el);
+    const check = this.model.checkIncorrectAnswer(answer, selectedCategory, index);
+    this.view.showResult(check)
+    })
 
     // далее зная выбранную челом категорию можно обратиться к модели и попросить у модели список вопросов
     // затем обратиться ко view и вызвать функцию showQuestion
