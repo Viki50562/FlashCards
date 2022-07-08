@@ -7,14 +7,18 @@ class View {
   constructor() {  }
 
   //Тут вывожу просто конкретный вопрос
-  showQuestion(arrQuestion) {
-    arrQuestion.forEach((el) => console.log(el))
-    // const answer = readLine.question(question);
+  showQuestion(question) {
+    const answer = readLine.question(question);
+    return answer;
   }
 
   //Тут вывожу эмодзи в зависимости от результата проверки ответа из модели
   showResult(check) {
-
+    if (check) {
+      return  '🥳';
+    } else {
+      return '💩';
+    }
   }
 
 
