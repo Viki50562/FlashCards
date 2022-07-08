@@ -15,7 +15,7 @@ class Controller {
 
     this.model.loadQuestionsMenuFromFiles();
 
-    this.view.showCategories(['Ястребы', 'Выдры', 'Еноты']);
+    this.view.showCategories(['Смекалка', 'Программирование', 'Фильмы']);
     const selectedCategory = this.view.getCategory();
 
     this.model.getQuestionListByCategory(selectedCategory);

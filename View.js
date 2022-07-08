@@ -9,7 +9,7 @@ class View {
   //Тут вывожу просто конкретный вопрос
 
   showQuestion(question) {
-    const answer = readLine.question(question);
+    const answer = readLine.question(question + '\n');
     return answer;
 
   }
@@ -17,9 +17,9 @@ class View {
   //Тут вывожу эмодзи в зависимости от результата проверки ответа из модели
   showResult(check) {
     if (check) {
-      return  '🥳';
+      console.log('🥳'); 
     } else {
-      return '💩';
+      console.log('💩');
     }
   }
 

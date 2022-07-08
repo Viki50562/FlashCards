@@ -37,7 +37,7 @@ raccooonQuestions;
 
   getQuestionListByCategory(category) {
     // Будет возвращать набор вопросов
-    if (category === 'Ястребы') {
+    if (category === 'Смекалка') {
       const questions = [];
       for(let i = 0; i < this.nighthawkQuestions.length; i += 1) {
         questions.push(this.nighthawkQuestions[i].question)
@@ -45,7 +45,7 @@ raccooonQuestions;
       // console.log(questions);
       return questions;
     }
-    if (category === 'Выдры') {
+    if (category === 'Программирование') {
       const questions = [];
       for(let i = 0; i < this.otterQuestions.length; i += 1) {
         questions.push(this.otterQuestions[i].question)
@@ -53,7 +53,7 @@ raccooonQuestions;
       // console.log(questions);
       return questions;
     }
-    if (category === 'Еноты') {
+    if (category === 'Фильмы') {
       const questions = [];
       for(let i = 0; i < this.raccooonQuestions.length; i += 1) {
         questions.push(this.raccooonQuestions[i].question)
@@ -64,7 +64,7 @@ raccooonQuestions;
   }
 
   checkIncorrectAnswer(answer, category, index) {
-    if (category === 'Ястребы') {
+    if (category === 'Смекалка') {
       const answers = [];
       for(let i = 0; i < this.nighthawkQuestions.length; i += 1) {
         answers.push(this.nighthawkQuestions[i].answer)
@@ -74,7 +74,7 @@ raccooonQuestions;
       }
       return false
     }
-    if (category === 'Выдры') {
+    if (category === 'Программирование') {
       const answers = [];
       for(let i = 0; i < this.otterQuestions.length; i += 1) {
         answers.push(this.otterQuestions[i].answer)
@@ -84,7 +84,7 @@ raccooonQuestions;
       }
       return false
     }
-    if (category === 'Еноты') {
+    if (category === 'Фильмы') {
       const answers = [];
       for(let i = 0; i < this.raccooonQuestions.length; i += 1) {
         answers.push(this.raccooonQuestions[i].answer)
