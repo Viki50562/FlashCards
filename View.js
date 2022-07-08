@@ -8,8 +8,14 @@ class View {
 
   //Тут вывожу просто конкретный вопрос
   showQuestion(arrQuestion) {
-    arrQuestion.forEach((el) => console.log(el))
-    // const answer = readLine.question(question);
+    arrQuestion.forEach((el) => {
+    // console.log(el)
+    const answer = readLine.question(el + '\n');
+    // console.log(answer)
+    })
+
+
+
   }
 
   //Тут вывожу эмодзи в зависимости от результата проверки ответа из модели
@@ -28,8 +34,6 @@ class View {
     const answer = readLine.question('Выберите категорию: ');
     return answer;
   }
-
-
 
 }
 
