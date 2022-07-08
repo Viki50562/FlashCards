@@ -63,8 +63,37 @@ raccooonQuestions;
     }
   }
 
-  checkIncorrectAnswer() {
-
+  checkIncorrectAnswer(answer, category, index) {
+    if (category === 'Ястребы') {
+      const answers = [];
+      for(let i = 0; i < this.nighthawkQuestions.length; i += 1) {
+        answers.push(this.nighthawkQuestions[i].answer)
+      }
+      if (answers[index] === answer.toLowerCase()) {
+        return true
+      }
+      return false
+    }
+    if (category === 'Выдры') {
+      const answers = [];
+      for(let i = 0; i < this.otterQuestions.length; i += 1) {
+        answers.push(this.otterQuestions[i].answer)
+      }
+      if (answers[index] === answer.toLowerCase()) {
+        return true
+      }
+      return false
+    }
+    if (category === 'Еноты') {
+      const answers = [];
+      for(let i = 0; i < this.raccooonQuestions.length; i += 1) {
+        answers.push(this.raccooonQuestions[i].answer)
+      }
+      if (answers[index] === answer.toLowerCase()) {
+        return true
+      }
+      return false
+    }
   }
 }
 
